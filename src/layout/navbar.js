@@ -3,10 +3,10 @@ import React from "react";
 export default function navbar() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Navbar
+            Employee Management System
           </a>
           <button
             className="navbar-toggler"
@@ -19,6 +19,7 @@ export default function navbar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
+          <button className="btn btn-outline-light">Add User</button>
         </div>
       </nav>
     </div>
