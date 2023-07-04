@@ -10,6 +10,10 @@ export default function AddUser() {
 
   const{name,username,email}=user
 
+  const onInputChange=(e)=> {
+
+  }
+
   return (
     <div className="container">
       <div className="row">
@@ -25,6 +29,7 @@ export default function AddUser() {
               placeholder="Name"
               name="name"
               value={name}
+              onChange={(e)=>onInputChange(e)}
             ></input>
           </div>
 
@@ -38,6 +43,7 @@ export default function AddUser() {
               placeholder="Username"
               name="username"
               value={username}
+              onChange={(e)=>onInputChange(e)}
             ></input>
           </div>
 
@@ -51,6 +57,7 @@ export default function AddUser() {
               placeholder="E-mail"
               name="email"
               value={email}
+              onChange={(e)=>onInputChange(e)}
             ></input>
           </div>
           <button type="submit" className="btn btn-outline-primary">
