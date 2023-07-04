@@ -37,11 +37,11 @@ export default function AddUser() {
             <input
               type={"text"}
               className="form-control"
-              placeholder="Email"
+              placeholder="E-mail"
               name="email"
             ></input>
           </div>
-
+          <button type="submit" className="btn btn-outline-primary">Submit</button>
         </div>
       </div>
     </div>
