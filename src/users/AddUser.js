@@ -15,7 +15,7 @@ export default function AddUser() {
   };
 
   const onSubmit=(e)=>{
-    
+    e.preventDefault();
   }
 
   return (
