@@ -17,6 +17,31 @@ export default function AddUser() {
               name="name"
             ></input>
           </div>
+
+          <div className="mb-3">
+            <label htmlFor="Username" className="form-label">
+              Username
+            </label>
+            <input
+              type={"text"}
+              className="form-control"
+              placeholder="Username"
+              name="username"
+            ></input>
+          </div>
+
+          <div className="mb-3">
+            <label htmlFor="Email" className="form-label">
+              E-mail
+            </label>
+            <input
+              type={"text"}
+              className="form-control"
+              placeholder="Email"
+              name="email"
+            ></input>
+          </div>
+
         </div>
       </div>
     </div>
