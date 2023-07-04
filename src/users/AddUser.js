@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function AddUser() {
+
+  const [user,setUsers]=useState({
+    name:"",
+    username:"",
+    email:""
+  })
+
+  const{name,username,email}=user
+
   return (
     <div className="container">
       <div className="row">
@@ -15,6 +24,7 @@ export default function AddUser() {
               className="form-control"
               placeholder="Name"
               name="name"
+              value={name}
             ></input>
           </div>
 
@@ -27,6 +37,7 @@ export default function AddUser() {
               className="form-control"
               placeholder="Username"
               name="username"
+              value={username}
             ></input>
           </div>
 
@@ -39,6 +50,7 @@ export default function AddUser() {
               className="form-control"
               placeholder="E-mail"
               name="email"
+              value={email}
             ></input>
           </div>
           <button type="submit" className="btn btn-outline-primary">
