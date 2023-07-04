@@ -9,6 +9,10 @@ export default function Home() {
     
   })
 
+  const loadUsers=()=> {
+    const result = axios.get("http://localhost:8080/users");
+  }
+
   return (
     <div className="container">
       <div className="py-4">
