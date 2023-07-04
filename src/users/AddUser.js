@@ -11,8 +11,8 @@ export default function AddUser() {
   const{name,username,email}=user
 
   const onInputChange=(e)=> {
-
-  }
+    setUsers({...user,[e.target.name]:e.target.value});
+  };
 
   return (
     <div className="container">
