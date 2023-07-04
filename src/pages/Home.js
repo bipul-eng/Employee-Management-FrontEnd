@@ -5,6 +5,9 @@ export default function Home() {
 
   const[users,setUsers] = useState([])
   
+  useEffect(()=>{
+    
+  })
 
   return (
     <div className="container">
