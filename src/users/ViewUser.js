@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function ViewUser() {
   return (
@@ -13,11 +14,20 @@ export default function ViewUser() {
                 <ul className="list-group list-group-flush">
                     <li className="list-group-item">
                         <b>Name:</b>
-                        
                     </li>
+
+                    <li className="list-group-item">
+                        <b>Username:</b>
+                    </li>
+
+                    <li className="list-group-item">
+                        <b>Email:</b>
+                    </li>
+
                 </ul>
             </div>
           </div>
+          <Link className="btn btn-primary my-2" to={"/"}>Home</Link>
         </div>
       </div>
     </div>
