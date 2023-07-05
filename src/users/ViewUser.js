@@ -1,7 +1,24 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
 
 export default function ViewUser() {
+  const [user, setUser] = useState({
+    name: "",
+    username: "",
+    email: "",
+  });
+
+  const { id } = useParams();
+
+  useEffect(() => {
+    loadUser;
+  }, []);
+
+  const loadUser = async () => {
+    const result = await axios.get(`http://localhost:8080/user/${id}`);
+    setUser(result.data);
+  };
+
   return (
     <div className="container">
       <div className="row">
@@ -10,24 +27,28 @@ export default function ViewUser() {
 
           <div className="card">
             <div className="card-header">
-                Details of User ID: 
-                <ul className="list-group list-group-flush">
-                    <li className="list-group-item">
-                        <b>Name:</b>
-                    </li>
+              Details of User with ID: {user.id}
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item">
+                  <b>Name:</b>
+                  {user.name}
+                </li>
 
-                    <li className="list-group-item">
-                        <b>Username:</b>
-                    </li>
+                <li className="list-group-item">
+                  <b>Username:</b>
+                  {user.username}
+                </li>
 
-                    <li className="list-group-item">
-                        <b>Email:</b>
-                    </li>
-
-                </ul>
+                <li className="list-group-item">
+                  <b>Email:</b>
+                  {user.email}
+                </li>
+              </ul>
             </div>
           </div>
-          <Link className="btn btn-primary my-2" to={"/"}>Home</Link>
+          <Link className="btn btn-primary my-2" to={"/"}>
+            Home
+          </Link>
         </div>
       </div>
     </div>
