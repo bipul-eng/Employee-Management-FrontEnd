@@ -1,10 +1,12 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 export default function EditUser() {
 
   let navigate=useNavigate();
+
+  const {id} = useParams();
 
   const [user, setUsers] = useState({
     name: "",
@@ -20,9 +22,11 @@ export default function EditUser() {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:8080/user", user);
+    await axios.put(`http://localhost:8080/user/${id}`, user);
     navigate("/");
   };
+
+  
 
   return (
     <div className="container">
