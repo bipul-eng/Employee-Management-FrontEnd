@@ -13,7 +13,7 @@ export default function ViewUser() {
   const { id } = useParams();
 
   useEffect(() => {
-    loadUser;
+    loadUser();
   }, []);
 
   const loadUser = async () => {
