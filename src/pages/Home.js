@@ -42,7 +42,7 @@ export default function Home() {
                   <Link
                     className="btn btn-outline-primary mx-2"
                     to={`/edituser/${user.id}`}
-                  ></Link>
+                  >Edit</Link>
 
                   <button className="btn btn-danger mx-2">Delete</button>
                 </td>
