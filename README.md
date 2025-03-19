@@ -47,8 +47,6 @@
 - **Spring Boot** was additionally utilised to **create custom exceptions**, specifically designed for **handling scenarios where the user ID was not found or encountered other exceptional conditions**.
 #### React & Spring Boot Summarisation Diagram
 
-![spring-boot-react-crud-example-rest-api-architecture](https://github.com/Saad1929/Employee-Management-System/assets/108022733/9951b53f-cf9c-4bf8-830f-654fa135789f)
-
 
 ### Postman and Testing Sceenshots
 - **Postman** was used as an **API platform** to **design, build, test and iterate** the **RESTful API** which was **built using Spring Boot**.
