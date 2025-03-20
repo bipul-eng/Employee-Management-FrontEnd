@@ -1,5 +1,5 @@
-# Employee Management System Back-end - Spring Boot & MySQL
-- **Front-end Component** using **React** is located here: https://github.com/bipul-eng/EmployeeManagementSys
+# Employee Management System Front End - React
+- **Back-end Component** using **Spring Boot & MySQL** is located here: https://github.com/bipul-eng/EmployeeManagementSys
 ## Contents
 1. [ Brief Summary ](#summary)
 2. [ Aims and Motivation ](#aims)
