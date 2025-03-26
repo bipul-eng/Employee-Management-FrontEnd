@@ -52,3 +52,8 @@ The npm package react-router-dom was used to provide components including <Brows
 Bootstrap is a front-end framework for building responsive web pages and applications, offering pre-built components and styles.
 For this project, Bootstrap was employed to facilitate the construction of the navigation bar. This feature enables users to conveniently access their employee information within the application.
 Bootstrap was additionally utilised to aid in the creation of the table that showcases employee information. This integration ensures a visually appealing and responsive table layout for an enhanced user experience.
+
+# Application Screenshots
+https://raw.githubusercontent.com/user/repo/main/image.png
+![My Image](https://raw.githubusercontent.com/user/repo/main/image.png?raw=true)
+
