@@ -1,12 +1,12 @@
-## Employee Management System Front-end - React
+# Employee Management System Front-end - React
 Back-end Component using Spring Boot & MySQL is located here: https://github.com/bipul-eng/EmployeeManagementSys
 
-# Contents
-# Brief Summary
-# Aims and Motivation
-# Technologies, Requirements and Software Tools
-# Design
-# Application Screenshots
+## Contents
+## Brief Summary
+## Aims and Motivation
+## Technologies, Requirements and Software Tools
+## Design
+## Application Screenshots
 
 ## Brief Summary
 I developed a RESTful API using Spring Boot and MySQL for the back-end, tested it with Postman, and integrated it into a React front-end using axios.
